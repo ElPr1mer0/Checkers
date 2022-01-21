@@ -1,0 +1,192 @@
+case 2:
+								for (int m = Pi; m > -1; m--) {
+									if ((game_pole[l, m]->Tag == "1") || (game_pole[l, m]->Tag == "3")) {
+										Pl = l; //запоминаю эти координаты, чтобы потом шашку убрать с поля
+										Pm = m;
+										checker = true;
+									}
+									if ((checker) && (game_pole[l, m]->Tag == "5")) {
+										for (int k = 0; k < 24; k++) {
+											if ((checkers[k].get_i() == Pl) && (checkers[k].get_j() == Pm)) { // если побили шашку, то находим ее и помечаем это
+												game_pole[j, i]->BackgroundImage = imageList1->Images[6];
+												checkers[k].active = true;
+												can_beat = true;
+											}
+										}
+									}
+									l++; // тоже увеличиваю, чтобы искало по диагонале 
+									if (l > 7) { // чтобы не было выхода за границу массива
+										break;
+									}
+
+								}
+
+								l = Pj;
+								checker = false; //  нужна для того, что искать шашку, а за ней пустое место (тогда значит можно бить)
+										//влево вверх
+								for (int m = Pi; m > -1; m--) {
+									if ((game_pole[l, m]->Tag == "1") || (game_pole[l, m]->Tag == "3")) {
+										Pl = l; //запоминаю эти координаты, чтобы потом шашку убрать с поля
+										Pm = m;
+										checker = true;
+
+									}
+									if ((checker) && (game_pole[l, m]->Tag == "5")) {
+										for (int k = 0; k < 24; k++) {
+											if ((checkers[k].get_i() == Pl) && (checkers[k].get_j() == Pm)) {
+												game_pole[j, i]->BackgroundImage = imageList1->Images[6];
+												checkers[k].active = true;
+												can_beat = true;
+											}
+										}
+									}
+									l--; // тоже увеличиваю, чтобы искало по диагонале 
+									if (l < 0) { // чтобы не было выхода за границу массива
+										break;
+									}
+								}
+
+								l = Pj;
+								checker = false; //  нужна для того, что искать шашку, а за ней пустое место (тогда значит можно бить)
+										//влево вниз 
+								for (int m = Pi; m < 8; m++) {
+									if ((game_pole[l, m]->Tag == "1") || (game_pole[l, m]->Tag == "3")) {
+										Pl = l; //запоминаю эти координаты, чтобы потом шашку убрать с поля
+										Pm = m;
+										checker = true;
+									}
+									if ((checker) && (game_pole[l, m]->Tag == "5")) {
+										for (int k = 0; k < 24; k++) {
+											if ((checkers[k].get_i() == Pl) && (checkers[k].get_j() == Pm)) {
+												game_pole[j, i]->BackgroundImage = imageList1->Images[6];
+												checkers[k].active = true;
+												can_beat = true;
+											}
+										}
+									}
+									l--; // тоже увеличиваю, чтобы искало по диагонале 
+									if (l < 0) { // чтобы не было выхода за границу массива
+										break;
+									}
+								}
+
+								l = Pj;
+								checker = false; //  нужна для того, что искать шашку, а за ней пустое место (тогда значит можно бить)
+										//вправо вниз 
+								for (int m = Pi; m < 8; m++) {
+									if ((game_pole[l, m]->Tag == "1") || (game_pole[l, m]->Tag == "3")) {
+										Pl = l; //запоминаю эти координаты, чтобы потом шашку убрать с поля
+										Pm = m;
+										checker = true;
+									}
+									if ((checker) && (game_pole[l, m]->Tag == "5")) {
+										for (int k = 0; k < 24; k++) {
+											if ((checkers[k].get_i() == Pl) && (checkers[k].get_j() == Pm)) {
+												game_pole[j, i]->BackgroundImage = imageList1->Images[6];
+												checkers[k].active = true;
+												can_beat = true;
+											}
+										}
+									}
+									l++; // тоже увеличиваю, чтобы искало по диагонале 
+									if (l > 7) { // чтобы не было выхода за границу массива
+										break;
+									}
+								}
+								break;
+							case 3:
+								for (int m = Pi; m > -1; m--) {
+									if ((game_pole[l, m]->Tag == "0") || (game_pole[l, m]->Tag == "2")) {
+										Pl = l; //запоминаю эти координаты, чтобы потом шашку убрать с поля
+										Pm = m;
+										checker = true;
+									}
+									if ((checker) && (game_pole[l, m]->Tag == "5")) {
+										for (int k = 0; k < 24; k++) {
+											if ((checkers[k].get_i() == Pl) && (checkers[k].get_j() == Pm)) { // если побили шашку, то находим ее и помечаем это
+												game_pole[j, i]->BackgroundImage = imageList1->Images[6];
+												checkers[k].active = true;
+												can_beat = true;
+											}
+										}
+									}
+									l++; // тоже увеличиваю, чтобы искало по диагонале 
+									if (l > 7) { // чтобы не было выхода за границу массива
+										break;
+									}
+
+								}
+
+								l = Pj;
+								checker = false; //  нужна для того, что искать шашку, а за ней пустое место (тогда значит можно бить)
+										//влево вверх
+								for (int m = Pi; m > -1; m--) {
+									if ((game_pole[l, m]->Tag == "0") || (game_pole[l, m]->Tag == "2")) {
+										Pl = l; //запоминаю эти координаты, чтобы потом шашку убрать с поля
+										Pm = m;
+										checker = true;
+
+									}
+									if ((checker) && (game_pole[l, m]->Tag == "5")) {
+										for (int k = 0; k < 24; k++) {
+											if ((checkers[k].get_i() == Pl) && (checkers[k].get_j() == Pm)) {
+												game_pole[j, i]->BackgroundImage = imageList1->Images[6];
+												checkers[k].active = true;
+												can_beat = true;
+											}
+										}
+									}
+									l--; // тоже увеличиваю, чтобы искало по диагонале 
+									if (l < 0) { // чтобы не было выхода за границу массива
+										break;
+									}
+								}
+
+								l = Pj;
+								checker = false; //  нужна для того, что искать шашку, а за ней пустое место (тогда значит можно бить)
+										//влево вниз 
+								for (int m = Pi; m < 8; m++) {
+									if ((game_pole[l, m]->Tag == "0") || (game_pole[l, m]->Tag == "2")) {
+										Pl = l; //запоминаю эти координаты, чтобы потом шашку убрать с поля
+										Pm = m;
+										checker = true;
+									}
+									if ((checker) && (game_pole[l, m]->Tag == "5")) {
+										for (int k = 0; k < 24; k++) {
+											if ((checkers[k].get_i() == Pl) && (checkers[k].get_j() == Pm)) {
+												game_pole[j, i]->BackgroundImage = imageList1->Images[6];
+												checkers[k].active = true;
+												can_beat = true;
+											}
+										}
+									}
+									l--; // тоже увеличиваю, чтобы искало по диагонале 
+									if (l < 0) { // чтобы не было выхода за границу массива
+										break;
+									}
+								}
+
+								l = Pj;
+								checker = false; //  нужна для того, что искать шашку, а за ней пустое место (тогда значит можно бить)
+										//вправо вниз 
+								for (int m = Pi; m < 8; m++) {
+									if ((game_pole[l, m]->Tag == "0") || (game_pole[l, m]->Tag == "2")) {
+										Pl = l; //запоминаю эти координаты, чтобы потом шашку убрать с поля
+										Pm = m;
+										checker = true;
+									}
+									if ((checker) && (game_pole[l, m]->Tag == "5")) {
+										for (int k = 0; k < 24; k++) {
+											if ((checkers[k].get_i() == Pl) && (checkers[k].get_j() == Pm)) {
+												game_pole[j, i]->BackgroundImage = imageList1->Images[6];
+												checkers[k].active = true;
+												can_beat = true;
+											}
+										}
+									}
+									l++; // тоже увеличиваю, чтобы искало по диагонале 
+									if (l > 7) { // чтобы не было выхода за границу массива
+										break;
+									}
+								}
+								break;

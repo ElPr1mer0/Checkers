@@ -1,0 +1,4 @@
+﻿  MyForm1.cpp
+H:\C++\!КУРСЫ\Выпускной проект\Checkers\MyForm1.h(927): warning C4715: Checkers::MyForm1::must_beat: значение возвращается не при всех путях выполнения
+  MyForm1.obj : обнаружен модуль MSIL; для MSIL последовательная компоновка отключена; выполняется полная компоновка
+  Checkers.vcxproj -> H:\C++\!КУРСЫ\Выпускной проект\Checkers\Debug\Checkers.exe

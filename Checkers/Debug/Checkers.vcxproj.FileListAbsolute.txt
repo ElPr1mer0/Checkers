@@ -1,0 +1,6 @@
+H:\C++\!КУРСЫ\Выпускной проект\Checkers\Debug\Checkers.vcxprojAssemblyReference.cache
+H:\C++\!КУРСЫ\Выпускной проект\Checkers\Debug\Checkers.exe
+H:\C++\!КУРСЫ\Выпускной проект\Checkers\Debug\Checkers.pdb
+H:\C++\!КУРСЫ\Выпускной проект\Checkers\Debug\Checkers.vcxproj.GenerateResource.cache
+H:\C++\!КУРСЫ\Выпускной проект\Checkers\Debug\Checkers.MyForm1.resources
+H:\C++\!КУРСЫ\Выпускной проект\Checkers\Debug\Checkers.MyForm1.ru-RU.resources
